@@ -6,9 +6,15 @@ import appsUninstall from '../modules/apps/uninstall'
 import { ColorifyConstants } from '../api/constants/Colors'
 
 export default class Uninstall extends CustomCommand {
-  static description = `Uninstalls an app from the current ${ColorifyConstants.ID('workspace.')} If not specified which app to uninstall, it defaults to the app in the current directory.`
+  static description = `Uninstalls an app from the current ${ColorifyConstants.ID(
+    'workspace.'
+  )} If not specified which app to uninstall, it defaults to the app in the current directory.`
 
-  static examples = [`${ColorifyConstants.COMMAND_OR_VTEX_REF('vtex uninstall')}`, `${ColorifyConstants.COMMAND_OR_VTEX_REF('vtex uninstall')} vtex.service-example`, `${ColorifyConstants.COMMAND_OR_VTEX_REF('vtex uninstall')} vtex.service-example@0.x`]
+  static examples = [
+    `${ColorifyConstants.COMMAND_OR_VTEX_REF('vtex uninstall')}`,
+    `${ColorifyConstants.COMMAND_OR_VTEX_REF('vtex uninstall')} vtex.service-example`,
+    `${ColorifyConstants.COMMAND_OR_VTEX_REF('vtex uninstall')} vtex.service-example@0.x`,
+  ]
 
   static flags = {
     ...CustomCommand.globalFlags,

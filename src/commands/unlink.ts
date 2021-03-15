@@ -6,9 +6,14 @@ import appsUnlink from '../modules/apps/unlink'
 import { ColorifyConstants } from '../api/constants/Colors'
 
 export default class Unlink extends CustomCommand {
-  static description = `Unlinks an app from the current ${ColorifyConstants.ID('workspace.')} If not specified which app to unlink, it defaults to the app in the current directory.`
+  static description = `Unlinks an app from the current ${ColorifyConstants.ID(
+    'workspace.'
+  )} If not specified which app to unlink, it defaults to the app in the current directory.`
 
-  static examples = [`${ColorifyConstants.COMMAND_OR_VTEX_REF('vtex unlink')}`, `${ColorifyConstants.COMMAND_OR_VTEX_REF('vtex unlink')} vtex.service-example@0.x`]
+  static examples = [
+    `${ColorifyConstants.COMMAND_OR_VTEX_REF('vtex unlink')}`,
+    `${ColorifyConstants.COMMAND_OR_VTEX_REF('vtex unlink')} vtex.service-example@0.x`,
+  ]
 
   static flags = {
     ...CustomCommand.globalFlags,

@@ -12,7 +12,10 @@ export default class Switch extends CustomCommand {
 
   static flags = {
     ...CustomCommand.globalFlags,
-    workspace: oclifFlags.string({ char: 'w', description: `Moves to the specified ${ColorifyConstants.ID('workspace.')}` }),
+    workspace: oclifFlags.string({
+      char: 'w',
+      description: `Moves to the specified ${ColorifyConstants.ID('workspace.')}`,
+    }),
   }
 
   static args = [{ name: 'account', required: true, description: `${ColorifyConstants.ID('Account')} name to log in.` }]

@@ -13,7 +13,10 @@ export default class Publish extends CustomCommand {
   static flags = {
     ...CustomCommand.globalFlags,
     tag: oclifFlags.string({ char: 't', description: 'Adds the specified tag to the release.' }),
-    workspace: oclifFlags.string({ char: 'w', description: `Uses the specified ${ColorifyConstants.ID('workspace')} in the app registry.` }),
+    workspace: oclifFlags.string({
+      char: 'w',
+      description: `Uses the specified ${ColorifyConstants.ID('workspace')} in the app registry.`,
+    }),
     force: oclifFlags.boolean({
       char: 'f',
       description: 'Publishes the app independently of SemVer rules.',

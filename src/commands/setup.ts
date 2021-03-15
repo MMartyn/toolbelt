@@ -26,7 +26,7 @@ export default class Setup extends CustomCommand {
       default: false,
     }),
     tsconfig: oclifFlags.boolean({
-      description: "Sets up React and Node TSconfig, if applicable.",
+      description: 'Sets up React and Node TSconfig, if applicable.',
       default: false,
     }),
   }
