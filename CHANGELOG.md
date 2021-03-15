@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- [commands] Refactor commands message
+
 ## [3.3.0-beta] - 2021-03-10
 
 ### Fixed
